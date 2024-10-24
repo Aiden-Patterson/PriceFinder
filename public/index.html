@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Resale Price Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Clothing Resale Price Finder</h1>
+    </header>
+    <main>
+        <section class="section">
+            <h2>Welcome!</h2>
+            <p>Input a search description into the search bar below, and it will search various websites to find an accurate selling price. It is most accurate when it sees about 200 results, so be specific! Include material, pattern, color, etc. to get the best result</p>
+        </section>
+
+        
+        <section class="section">
+            <h2>Find the Best Price for Your Clothing Item</h2>
+            <form id="clothingForm">
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" placeholder="Enter clothing description" required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <div id="loading">Loading, Please Wait...</div>
+        <section class="section" id="results">
+            <h2>Search Results</h2>
+            <div id="results"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Clothing Resale Price Finder</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
